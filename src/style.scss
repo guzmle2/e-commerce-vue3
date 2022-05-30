@@ -1,0 +1,52 @@
+@import "assets/fonts/icons/style";
+*{
+  font-family: Futura;
+}
+body {
+  background: #f2f2f2;
+}
+
+.icon-svg {
+  &.eye {
+
+    background-image: url(~@/assets/img/estrella.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-width: 20px;
+    min-height: 20px;
+  }
+
+  &.start {
+
+    background-image: url(~@/assets/img/estrella.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-width: 20px;
+    min-height: 20px;
+  }
+
+  &.cart {
+  }
+}
+
+.btn {
+  border-radius: 0;
+  background: black;
+  color: white;
+
+  box-shadow: none !important;
+
+  &:hover {
+    color: black;
+    background: white;
+    border: 1px solid black;
+  }
+}
+
+.card {
+  border-radius: 0;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}

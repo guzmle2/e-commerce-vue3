@@ -1,0 +1,31 @@
+.nav-bar-component {
+  $size_width: 250px;
+
+  .logo-img {
+    background-image: url(~@/assets/img/logo.svg);
+    background-repeat: no-repeat;
+    width: $size_width;
+    height: $size_width*.35;
+    background-size: contain;
+  }
+
+  .cart-items {
+    position: relative;
+
+    &::after {
+      content: attr(data-content);
+      font-size: .4em;
+      position: absolute;
+      top: -10px;
+      right: -15px;
+      background: black;
+      font-family: "American Typewriter";
+      color: white;
+      padding: 4px;
+      min-width: 25px;
+      min-height: 25px;
+      text-align: center;
+      border-radius: 100%;
+    }
+  }
+}
